@@ -1,13 +1,20 @@
-import React from 'react';
+import React, { createContext } from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-// import reportWebVitals from './reportWebVitals';
+import ProductStore from './store/productStore';
+import UserStore from './store/userStore';
+
+export const Context =  createContext(null);
+
+const commonStore = {
+  user: new UserStore(),
+  product: new ProductStore()
+};
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Context.Provider value={commonStore}>
+      <App />
+  </Context.Provider>,
   document.getElementById('root')
 );
 
-// reportWebVitals();

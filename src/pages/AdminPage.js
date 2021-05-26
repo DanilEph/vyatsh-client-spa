@@ -1,10 +1,9 @@
 import React from 'react';
 
-export const ProductCard = () => {
+export const AdminPage = () => {
     return (
         <>
-            <h1>ProductCard</h1>
+            <h1>Admin</h1>
         </>
     );
-
 };
