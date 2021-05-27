@@ -1,0 +1,15 @@
+.nav > *{
+    margin-right: 2rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    vertical-align: bottom;
+    line-height: 20px;
+    color: #007bff;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+.logo {
+    font-size: 2rem;
+}

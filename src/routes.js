@@ -1,9 +1,10 @@
-import { ADMIN_PAGE, HOME_PAGE, PRODUCT_CARD, SHOPPING_CART, STORE } from "./utils/consts";
+import { ADMIN_PAGE, HOME_PAGE, LOGIN, PRODUCT_CARD, REGISTRATION, SHOPPING_CART, STORE } from "./utils/consts";
 import { HomePage } from './pages/HomePage';
 import { Store } from './pages/Store';
 import { AdminPage } from './pages/AdminPage';
 import { ShoppingCart } from './pages/ShoppingCart';
 import { ProductCard } from './pages/ProductCard';
+import { RegistAuth } from "./pages/RegistAuth";
 
 export const customerRoute = [
     {
@@ -34,6 +35,16 @@ export const publicRoute = [
     {
         path: PRODUCT_CARD,
         component: ProductCard
+    },
+
+    {
+        path: REGISTRATION,
+        component: RegistAuth
+    },
+
+    {
+        path: LOGIN,
+        component: RegistAuth
     }
 ];
 
